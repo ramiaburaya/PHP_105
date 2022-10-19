@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
+declare(strict_types=1);
 
-    <title> PHP is a Loosely Typed Language</title>
-</head>
+echo "<h1> PHP is a Loosely Typed Language</h1>";
 
-<body>
+function add(int $a, int $b)
+{
+    return $a + $b;
+}
 
-    <?php
-
-    declare(strict_types=1);
-    echo "<h1> PHP is a Loosely Typed Language</h1>";
-
-    function add(int $a, int $b)
-    {
-        return $a + $b;
-    }
-
-    echo add(5, "5 days");
-
-
-    ?>
-</body>
-
-</html>
+echo add(5, 5);
